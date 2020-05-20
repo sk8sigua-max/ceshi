@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4500426D-4303-4DAE-80FB-51582DF332BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin4">
+      <HintPath>..\..\AliPay\AliPay\bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car.Designer.cs">
+      <DependentUpon>Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="car_gai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="car_gai.Designer.cs">
+      <DependentUpon>car_gai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_zeng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_zeng.Designer.cs">
+      <DependentUpon>Car_zeng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChuKu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuKu.Designer.cs">
+      <DependentUpon>ChuKu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBhelper.cs" />
+    <Compile Include="Direct.cs" />
+    <Compile Include="Direct.Designer.cs">
+      <DependentUpon>Direct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManageForm.Designer.cs">
+      <DependentUpon>EmployeeManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetThePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetThePassword.Designer.cs">
+      <DependentUpon>ForgetThePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JHRuKu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JHRuKu.Designer.cs">
+      <DependentUpon>JHRuKu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KuCun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KuCun.Designer.cs">
+      <DependentUpon>KuCun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lord.cs" />
+    <Compile Include="Lord.Designer.cs">
+      <DependentUpon>Lord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="market.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="market.designer.cs">
+      <DependentUpon>market.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionInfo_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionInfo_form.Designer.cs">
+      <DependentUpon>ProductionInfo_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionInfo_gai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionInfo_gai.Designer.cs">
+      <DependentUpon>ProductionInfo_gai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionInfo_zeng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionInfo_zeng.Designer.cs">
+      <DependentUpon>ProductionInfo_zeng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseInfo.Designer.cs">
+      <DependentUpon>PurchaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseInfo_gai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseInfo_gai.Designer.cs">
+      <DependentUpon>PurchaseInfo_gai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseInfo_zeng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseInfo_zeng.Designer.cs">
+      <DependentUpon>PurchaseInfo_zeng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryForgotPassword.Designer.cs">
+      <DependentUpon>QueryForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMainForm.Designer.cs">
+      <DependentUpon>StaffMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffScoreForm.designer.cs">
+      <DependentUpon>StaffScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffUpdateForm.Designer.cs">
+      <DependentUpon>StaffUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="year.Designer.cs">
+      <DependentUpon>year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="year1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="year1.Designer.cs">
+      <DependentUpon>year1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="year2cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="year2cs.Designer.cs">
+      <DependentUpon>year2cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="year3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="year3.Designer.cs">
+      <DependentUpon>year3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="year4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="year4.Designer.cs">
+      <DependentUpon>year4.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddForm.resx">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car.resx">
+      <DependentUpon>Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="car_gai.resx">
+      <DependentUpon>car_gai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_zeng.resx">
+      <DependentUpon>Car_zeng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChuKu.resx">
+      <DependentUpon>ChuKu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Direct.resx">
+      <DependentUpon>Direct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeManageForm.resx">
+      <DependentUpon>EmployeeManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetThePassword.resx">
+      <DependentUpon>ForgetThePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JHRuKu.resx">
+      <DependentUpon>JHRuKu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KuCun.resx">
+      <DependentUpon>KuCun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lord.resx">
+      <DependentUpon>Lord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="market.resx">
+      <DependentUpon>market.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionInfo_form.resx">
+      <DependentUpon>ProductionInfo_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionInfo_gai.resx">
+      <DependentUpon>ProductionInfo_gai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionInfo_zeng.resx">
+      <DependentUpon>ProductionInfo_zeng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseInfo.resx">
+      <DependentUpon>PurchaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseInfo_gai.resx">
+      <DependentUpon>PurchaseInfo_gai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseInfo_zeng.resx">
+      <DependentUpon>PurchaseInfo_zeng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForgotPassword.resx">
+      <DependentUpon>QueryForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StaffMainForm.resx">
+      <DependentUpon>StaffMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffScoreForm.resx">
+      <DependentUpon>StaffScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffUpdateForm.resx">
+      <DependentUpon>StaffUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="year.resx">
+      <DependentUpon>year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="year1.resx">
+      <DependentUpon>year1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="year2cs.resx">
+      <DependentUpon>year2cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="year3.resx">
+      <DependentUpon>year3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="year4.resx">
+      <DependentUpon>year4.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12-1411221AZ7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1731ad1d693162795cf22be0a0c5c2bf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2013122400_169ffaa70813258511edL58H4k7vhTxR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2010010617529631.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13128690021262890.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACCOUNT_GROUP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c5d1682949.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delemp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3da-heirxyf4728167.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img403226648.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popeditbutton_default.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\super_del.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71f1c8c338f3b3c935bb5b8a59c595271.jpg" />
+    <None Include="Resources\cc8017d7f3cd5d2631d15db3b2296b98.jpg" />
+    <None Include="Resources\1ee174fcffc330a28181594f94d7970f1.jpg" />
+    <None Include="Resources\71f1c8c338f3b3c935bb5b8a59c59527.jpg" />
+    <None Include="Resources\4d920ce692652d1f2d69bb282c833d83.jpg" />
+    <None Include="Resources\76af93318a582a0aed00bd0e6a9a15a0.jpg" />
+    <None Include="Resources\397ed6f48c6839713a546f44cdd7302d.jpg" />
+    <None Include="Resources\9badeed603002a0485dfd597e2e27e64.jpg" />
+    <None Include="Resources\7096a00434b8d13567fcec7caf0a8f6b.jpg" />
+    <None Include="Resources\bfc13bfc956c4dbf1ee744772db2936c.jpg" />
+    <None Include="Resources\e7c3647100e16966e53ead32e8d3e36d.jpg" />
+    <None Include="Resources\6b2a8cadb490b887752fdfac017518db.jpg" />
+    <None Include="Resources\7d38de0461b601d97dc59b89bdc156fc.jpg" />
+    <None Include="Resources\1ee174fcffc330a28181594f94d7970f.jpg" />
+    <Content Include="Resources\5445d19bc0fe8cd88db41af1c36bb6d0.jpg" />
+    <None Include="Resources\5445d19bc0fe8cd88db41af1c36bb6d01.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
